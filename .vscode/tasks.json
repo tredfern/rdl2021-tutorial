@@ -5,8 +5,8 @@
   "tasks": [
     {
       "label": "Run Python",
-      "type": "shell",
-      "command": "python3",
+      "type": "process",
+      "command": "py",
       "args":[ "main.py" ],
       "problemMatcher": []
     }

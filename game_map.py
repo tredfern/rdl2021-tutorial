@@ -11,9 +11,7 @@ import tile_types
 class GameMap:
   def __init__(self, width: int, height: int) -> None:
       self.width, self.height = width, height
-      self.tiles = np.full((width, height), fill_value=tile_types.floor, order = "F")
-
-      self.tiles[30:33, 22] = tile_types.wall
+      self.tiles = np.full((width, height), fill_value=tile_types.wall, order = "F")
 
   def inBounds(self, x: int, y: int) -> bool:
     return 0 <= x < self.width and 0 <= y < self.height
